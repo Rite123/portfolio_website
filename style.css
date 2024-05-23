@@ -141,3 +141,166 @@ a:hover {
 .scroll_icon span:first-child {
     transform: none;
 }
+
+
+/* section */
+
+section {
+    padding: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+
+/* profile */
+
+.profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.profile_container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.profile_text {
+    text-align: center;
+    align-self: center;
+}
+
+.profile_text p {
+    font-weight: 600;
+}
+
+.text_1 {
+    text-align: center;
+    margin: 2px;
+}
+
+.text_2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.social-container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+
+/* icon */
+
+.social-icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+
+/* button */
+
+.btn-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+button {
+    font-weight: 600;
+    transition: all 300mx ease;
+    padding: 1rem;
+    width: 9rem;
+    border-radius: 3rem;
+}
+
+.btn-btn,
+.btn-btn-2 {
+    border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-btn:hover,
+.btn-btn-2:hover {
+    /* border: rgb(53,53,53) 0.1rem solid; */
+    cursor: pointer;
+}
+
+.btn-btn,
+.btn-btn-2:hover {
+    background: rgb(53, 53, 53);
+    color: white;
+}
+
+.btn-btn:hover {
+    background: rgb(0, 0, 0);
+}
+
+.btn-btn-2 {
+    background: none;
+}
+
+.btn-btn-2:hover {
+    border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+
+/* About */
+
+.about {
+    position: relative;
+}
+
+.section-container {
+    display: flex;
+    gap: 3rem;
+}
+
+.about-container {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-detail-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-container,
+.about-detail-container {
+    display: flex;
+}
+
+.about-pic {
+    border-radius: 2rem;
+}
+
+.icon-arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+    height: 2rem;
+}
+
+.detail-container {
+    padding: 1.5rem;
+    flex: 1;
+    background-color: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
