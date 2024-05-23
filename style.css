@@ -21,7 +21,7 @@ a,
     transition: all 300ms ease;
 }
 
-nav,
+.Navbar,
 .nav-links {
     display: flex;
 }
@@ -58,4 +58,86 @@ a:hover {
 
 .Name_logo:hover {
     cursor: default;
+}
+
+
+/* scroll nav for mobile */
+
+
+/* .scroll_nav {
+    display: none;
+} */
+
+.scroll_menu {
+    position: relative;
+    display: inline-block;
+}
+
+.scroll_icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25px;
+    width: 35px;
+    cursor: pointer;
+}
+
+.scroll_icon span {
+    width: 100%;
+    height: 3px;
+    background-color: gray;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(43, 41, 41);
+    font-size: 1.5rem;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.scroll_icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.scroll_icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.scroll_icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.scroll_icon span:first-child {
+    transform: none;
+}
+
+.scroll_icon span:first-child {
+    opacity: 1;
+}
+
+.scroll_icon span:first-child {
+    transform: none;
 }
